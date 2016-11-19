@@ -49,6 +49,7 @@ class TinyContent(models.Model):
 
     class Meta:
         verbose_name = 'Content block'
+        permissions = (("can_change_title", "Can change Title"),)
 
 
 @python_2_unicode_compatible
